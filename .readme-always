@@ -1,0 +1,160 @@
+# Lexinum Landing Page - Multi-Agent Scratchpad
+
+This document is the central coordination file for the Lexinum landing page project. It facilitates communication between two roles—**Planner** and **Executor**—to plan, execute, and document all tasks and decisions.
+
+---
+
+## Role Descriptions
+
+### 1. Planner and Agent
+
+**Responsibilities:**
+- Perform high-level planning, analysis, and task breakdown.
+- Define success criteria and evaluate progress.
+- Update this file with planning notes, decisions, and next steps.
+
+**Actions:**
+-  (No external tools are used in this WebContainer environment, so planning is done internally.)
+- Record all planning outputs in the Multi-Agent Scratchpad below.
+
+### 2. Executor
+
+**Responsibilities:**
+
+- Execute tasks as directed by the Planner.
+- Report progress, mark milestones, and raise blockers in the Multi-Agent Scratchpad.
+- Provide detailed feedback or request assistance as needed.
+
+**Actions:**
+
+- After completing a task, update the "Current Status / Progress Tracking" section.
+- Post any blockers or questions in the "Executor's Feedback or Assistance Requests" section.
+- Do not announce final task completion—always seek confirmation from the Planner.
+
+---
+
+## Document Conventions
+
+- **Consistency:** Do not change section headers arbitrarily.
+- **Record Keeping:** Append new entries; never delete historical notes.
+- **Labeling:** Clearly mark each entry with either "Planner" or "Executor".
+
+---
+
+## Workflow Guidelines
+
+1.  **Initial Setup:**
+    -   Update "Background and Motivation" with the project’s overall objectives.
+    -   The Planner generates a comprehensive plan.
+2.  **Task Execution:**
+    -   The Executor carries out tasks as per the plan.
+    -   Document progress and note any issues in the designated sections.
+3.  **Iterative Coordination:**
+    -   Continuously update the document as tasks are completed or new challenges arise.
+    -   The cycle of planning and execution continues until the Planner confirms project completion.
+4.  **Major Changes:**
+    -   Notify the Planner in "Executor's Feedback or Assistance Requests" before implementing significant modifications.
+
+---
+
+# Tools
+
+(No external tools are available in this WebContainer environment.)
+
+---
+
+# Lessons
+
+## User Specified Lessons
+
+<!-- Add any project-specific lessons here -->
+
+## Cursor Learned
+
+<!-- Document auto-populated or discovered lessons during development. -->
+
+---
+
+# Multi-Agent Scratchpad
+
+## Background and Motivation
+
+**Planner:** The goal is to create a responsive, dark-mode-first landing page for the Lexinum product.  The page should focus on selling the product and driving downloads from the App Store and Google Play.  Key features include a hero section with a 5-second demo video, core messaging ("Switch between numbers and words like a pro."), and prominent CTA buttons. The site should be built with Next.js, and we'll use Storybook for component development. Language auto-detection (EN/ES/JP) is required.
+
+## Key Challenges and Analysis
+
+**Planner:**
+- Ensuring responsiveness across different screen sizes.
+- Implementing language auto-detection correctly.
+- Integrating the demo video seamlessly.
+- Setting up Storybook and ensuring it works with Tailwind CSS.
+- Placeholder assets (video, app store icons) need to be replaced with final assets.
+
+## Verifiable Success Criteria
+
+**Planner:**
+- The landing page is fully responsive and displays correctly on mobile, tablet, and desktop.
+- Language auto-detection works, defaulting to English if the user's language isn't EN, ES, or JP.
+- The demo video plays correctly (once the placeholder is replaced).
+- CTA buttons link to the correct App Store and Google Play URLs (once placeholders are replaced).
+- Storybook stories exist for the Hero and CTAButtons components, demonstrating different states (default, hover, different languages).
+
+## High-level Task Breakdown
+
+**Planner:**
+1.  Project Initialization (Next.js, Tailwind CSS, Storybook).
+2.  Create core components (Header, Hero, CTAButtons, Footer).
+3.  Implement language detection and translation.
+4.  Create Storybook stories.
+5.  Add placeholder assets (video, icons).
+6.  Refine styling and responsiveness.
+
+## Current Status / Progress Tracking
+
+**Executor:**
+- Project initialized with Next.js, Tailwind CSS, and Storybook.
+- Core components (Header, Hero, CTAButtons, Footer) created.
+- Language detection and translation implemented.
+- Storybook stories created for Hero and CTAButtons.
+- Placeholder images and video placeholder added.
+- Basic styling applied.
+- Google Play icon switched to SVG.
+- Attempted to remove app-store-icon.png, but it was already effectively gone.
+
+## Critical Issues and Solutions
+
+**Executor:**
+- Storybook installation initially failed due to an I/O error.  Resolved by installing Storybook dependencies explicitly and using an older version.
+- Storybook `translate` function error: Resolved by passing the `lang` prop explicitly in Storybook stories.
+
+## Next Steps and Priorities
+
+**Planner:**
+1.  **Thoroughly test responsiveness:** Use browser developer tools and Storybook's viewport settings to check different screen sizes.
+2.  **Test language detection:**  Simulate different browser language settings to ensure correct behavior.
+3.  **Prepare for final assets:**  Document the required dimensions and formats for the demo video and app store icons.
+4.  **Consider adding a section below the CTA buttons:** This could showcase additional features or benefits of Lexinum.
+
+## Troubleshooting Guide
+
+<!-- Record common issues and resolutions. -->
+
+## Required Documentation
+
+<!-- Specify any needed documentation. -->
+
+## Executor's Feedback or Assistance Requests
+
+**Executor:**  None at this time.
+
+## Next Steps and Action Items
+
+**Planner:**
+1. Test responsiveness and language detection.
+2. Document asset requirements.
+3. Design and implement an additional content section.
+
+## Lessons
+
+<!-- Auto-populated development insights. -->
+- It's easy to get ahead of oneself and try to remove files that are already effectively gone. Double-check the file system state.

@@ -1,0 +1,31 @@
+{
+  "name": "lexinum-landing-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "7.6.17",
+    "@storybook/addon-interactions": "7.6.17",
+    "@storybook/addon-links": "7.6.17",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/react": "7.6.17",
+    "@storybook/react-webpack5": "7.6.17",
+    "@storybook/testing-library": "0.2.2",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "storybook": "^7.6.17",
+    "tailwindcss": "latest"
+  }
+}
